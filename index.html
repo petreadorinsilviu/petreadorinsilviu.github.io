@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>România 2028 – Reforma administrativă</title>
+<meta name="description" content="Simulatoarele de reorganizare administrativă România 2028 și Brăila 2028: comasarea primăriilor și regionalizarea, pe execuția bugetară 2025 și Recensământul 2021. Petrea Dorin Silviu, senator de Brăila.">
+<meta property="og:title" content="România 2028 – Reforma administrativă">
+<meta property="og:description" content="3.180 de primării, 41 de consilii județene. Cât se economisește prin comasare și regionalizare, județ cu județ, pe datele oficiale 2025.">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://petreadorinsilviu.github.io/">
+<meta property="og:image" content="https://petreadorinsilviu.github.io/Romania-Reforma/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://petreadorinsilviu.github.io/Romania-Reforma/preview.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Aceeași identitate ca simulatoarele: tricolor discret, Literata pentru titluri, Public Sans pentru text, JetBrains Mono pentru cifre */
+:root{
+  --bg:#f4f5f2; --panel:#ffffff; --ink:#1d2321; --muted:#5d6763; --line:#d9ddd8; --fade:#e8e9e6;
+  --ro-blue:#002b7f; --ro-yellow:#fcd116; --ro-red:#ce1126; --accent:#1f4e8c; --ok:#2f7d4f;
+  --f-display:"Literata", Georgia, serif;
+  --f-body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --bg:#111513; --panel:#181d1b; --ink:#e7ebe8; --muted:#9aa49f; --line:#2c3431; --fade:#232927; --accent:#7fa8e0; --ok:#6cc08f; color-scheme:dark; }
+}
+:root[data-theme="dark"]{ --bg:#111513; --panel:#181d1b; --ink:#e7ebe8; --muted:#9aa49f; --line:#2c3431; --fade:#232927; --accent:#7fa8e0; --ok:#6cc08f; color-scheme:dark; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--f-body);-webkit-text-size-adjust:100%}
+a{color:var(--accent)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+@media (min-width:720px){ .wrap{padding:0 28px} }
+.flag{display:flex;gap:6px;margin-bottom:14px}
+.flag i{display:block;width:40px;height:5px;border-radius:3px}
+.eyebrow{font:600 12px/1.4 var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font:700 clamp(36px,7vw,64px)/1.05 var(--f-display);margin:6px 0 0;letter-spacing:-.01em}
+h2{font:700 clamp(24px,3.6vw,32px)/1.2 var(--f-display);margin:0 0 6px;text-wrap:balance}
+h3{font:700 19px/1.3 var(--f-display);margin:0}
+.lede{font-size:clamp(17px,2.2vw,20px);color:var(--muted);max-width:44ch;margin:14px 0 0}
+.mono{font-family:var(--f-mono)}
+header.hero{padding:40px 0 32px;border-bottom:1px solid var(--line);background:var(--panel)}
+.byline{margin-top:18px;font-size:14px;color:var(--muted)}
+.byline b{color:var(--ink)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:600 15px var(--f-body);padding:11px 18px;border-radius:999px;text-decoration:none;cursor:pointer}
+.btn.primary{background:var(--ink);color:var(--panel);border-color:var(--ink)}
+.btn:hover{border-color:var(--ink)}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:30px}
+@media (min-width:820px){ .kpis{grid-template-columns:repeat(4,minmax(0,1fr))} }
+.kpi{background:var(--panel);padding:16px}
+.kpi b{display:block;font:600 clamp(22px,3.2vw,30px)/1.15 var(--f-mono);letter-spacing:-.02em}
+.kpi span{display:block;font-size:13.5px;color:var(--muted);margin-top:4px}
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 22px;max-width:62ch}
+.cards{display:grid;gap:16px}
+@media (min-width:760px){ .cards.two{grid-template-columns:1fr 1fr} .cards.three{grid-template-columns:repeat(3,minmax(0,1fr))} }
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.card img{display:block;width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;border-bottom:1px solid var(--line);background:var(--fade)}
+.card .in{padding:18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.card .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:6px}
+.card .big{font:600 26px/1.1 var(--f-mono);letter-spacing:-.02em}
+.card .big small{font:500 13px var(--f-body);color:var(--muted);letter-spacing:0;display:block;margin-top:4px}
+.tablewrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}
+th{white-space:nowrap;font:600 12px var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--fade)}
+td.n,th.n{text-align:right;font-family:var(--f-mono)}
+tr:last-child td{border-bottom:0}
+tr.hl td{background:color-mix(in srgb,var(--ro-yellow) 14%,var(--panel))}
+.note{font-size:13.5px;color:var(--muted);margin:12px 0 0}
+.share{display:grid;gap:10px}
+.sh{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.sh .t{flex:1 1 260px;min-width:0}
+.sh .t b{display:block}
+.sh .t code{display:block;font:12.5px var(--f-mono);color:var(--muted);overflow-wrap:anywhere}
+.sh .btn{padding:8px 14px;font-size:14px}
+ol.crit{margin:0;padding-left:22px;max-width:66ch}
+ol.crit li{margin:6px 0}
+footer{padding:28px 0 44px;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="flag" aria-hidden="true"><i style="background:var(--ro-blue)"></i><i style="background:var(--ro-yellow)"></i><i style="background:var(--ro-red)"></i></div>
+    <div class="eyebrow">Reforma administrativă · execuția bugetară 2025 · RPL 2021</div>
+    <h1>România 2028</h1>
+    <p class="lede">Cât costă astăzi administrația locală, cât s-ar economisi prin comasarea primăriilor și a consiliilor județene și cât își pot plăti comunele din venituri proprii. Pe datele oficiale, județ cu județ.</p>
+    <p class="byline">Un proiect al lui <b>Petrea Dorin Silviu</b>, senator de Brăila.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://petreadorinsilviu.github.io/Romania-Reforma/">Deschide simulatorul național</a>
+      <a class="btn" href="https://petreadorinsilviu.github.io/Braila-Reforma/">Simulatorul Brăila 2028</a>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><b>3.180</b><span>primării azi, în afara Bucureștiului</span></div>
+      <div class="kpi"><b>1,46 mld.</b><span>lei pe an economie la comasarea în zone de minimum 5.000 de locuitori</span></div>
+      <div class="kpi"><b>42 → 8</b><span>județe și București devin 8 regiuni de dezvoltare</span></div>
+      <div class="kpi"><b>1,7 mld.</b><span>lei pe an, regiuni și comasarea primăriilor împreună</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <h2>Cele două simulatoare</h2>
+    <p class="sub">Amândouă pornesc de la aceleași date: execuția bugetară a fiecărei primării la 31 decembrie 2025 și populația din Recensământul 2021. Poți schimba pragul de populație, desena propriile zone și modifica ipotezele de calcul.</p>
+    <div class="cards two">
+      <article class="card">
+        <img src="https://petreadorinsilviu.github.io/Romania-Reforma/preview.png" alt="Harta României împărțită în zone de comasare, în simulatorul România 2028" loading="lazy" width="1200" height="630">
+        <div class="in">
+          <h3>România 2028</h3>
+          <p>Toate cele 3.180 de UAT din țară. Propunere automată pentru fiecare județ și prag, hartă cu situația de azi, zone construite manual și regionalizare pe județe întregi.</p>
+          <div class="row"><a class="btn primary" href="https://petreadorinsilviu.github.io/Romania-Reforma/">Deschide</a><a class="btn" href="https://petreadorinsilviu.github.io/Romania-Reforma/#surse">Surse și metodă</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://petreadorinsilviu.github.io/Braila-Reforma/preview.png" alt="Harta județului Brăila cu zonele propuse, în simulatorul Brăila 2028" loading="lazy" width="1200" height="630">
+        <div class="in">
+          <h3>Brăila 2028</h3>
+          <p>Cele 44 de primării din județul Brăila, cu scenariul de 5 UAT-uri continue teritorial și cu indicatorii fiecărei primării verificați la leu cu rapoartele Ministerului Finanțelor.</p>
+          <div class="row"><a class="btn primary" href="https://petreadorinsilviu.github.io/Braila-Reforma/">Deschide</a><a class="btn" href="https://petreadorinsilviu.github.io/Romania-Reforma/judet-braila-5000.html">Brăila în varianta națională</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Comasarea primăriilor</h2>
+    <p class="sub">Pentru fiecare prag minim de populație pe zonă: câte unități ar rezulta, cât se economisește pe an și ce parte din funcționare acoperă comunele din venituri proprii (în afara municipiilor).</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Prag minim</th><th class="n">Zone</th><th class="n">Economie / an</th><th class="n">Acoperire proprie</th><th></th></tr></thead>
+      <tbody>
+        <tr><td>3.000 de locuitori</td><td class="n">2.182</td><td class="n">908,9 mil. lei</td><td class="n">74% → 77%</td><td><a href="https://petreadorinsilviu.github.io/Romania-Reforma/tara-3000.html">Vezi pe hartă</a></td></tr>
+        <tr class="hl"><td><b>5.000 de locuitori</b></td><td class="n">1.629</td><td class="n">1,46 mld. lei</td><td class="n">74% → 79%</td><td><a href="https://petreadorinsilviu.github.io/Romania-Reforma/tara-5000.html">Vezi pe hartă</a></td></tr>
+        <tr><td>7.500 de locuitori</td><td class="n">1.257</td><td class="n">1,85 mld. lei</td><td class="n">74% → 81%</td><td><a href="https://petreadorinsilviu.github.io/Romania-Reforma/tara-7500.html">Vezi pe hartă</a></td></tr>
+        <tr><td>10.000 de locuitori</td><td class="n">1.022</td><td class="n">2,08 mld. lei</td><td class="n">74% → 81%</td><td><a href="https://petreadorinsilviu.github.io/Romania-Reforma/tara-10000.html">Vezi pe hartă</a></td></tr>
+        <tr><td>15.000 de locuitori</td><td class="n">744</td><td class="n">2,38 mld. lei</td><td class="n">74% → 83%</td><td><a href="https://petreadorinsilviu.github.io/Romania-Reforma/tara-15000.html">Vezi pe hartă</a></td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Plecând de la 3.180 de primării. Zonele nu trec granița județului. Economia e estimată la personal și funcționare; ipotezele se pot modifica în simulator.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Regionalizarea</h2>
+    <p class="sub">Județe întregi grupate în regiuni, cu un singur consiliu în capitala aleasă. Spitalele, drumurile și serviciile rămân; se comasează aparatul de conducere și administrare al consiliilor județene.</p>
+    <div class="cards three">
+      <article class="card"><div class="in">
+        <h3>8 regiuni de dezvoltare</h3>
+        <p>Regiunile din Legea 315/2004, devenite unități administrative.</p>
+        <div class="big">243,2 mil. lei<small>pe an la consiliile județene · 1,7 mld. lei împreună cu comasarea primăriilor</small></div>
+        <div class="row"><a class="btn" href="https://petreadorinsilviu.github.io/Romania-Reforma/regiuni-dev-5000.html">Vezi pe hartă</a></div>
+      </div></article>
+      <article class="card"><div class="in">
+        <h3>8 regiuni istorice</h3>
+        <p>Provinciile istorice, aproximate pe granițele județelor.</p>
+        <div class="big">245,5 mil. lei<small>pe an la consiliile județene · 1,7 mld. lei împreună cu comasarea primăriilor</small></div>
+        <div class="row"><a class="btn" href="https://petreadorinsilviu.github.io/Romania-Reforma/regiuni-ist-5000.html">Vezi pe hartă</a></div>
+      </div></article>
+      <article class="card"><div class="in">
+        <h3>21 de județe mari</h3>
+        <p>Comasarea județelor vecine din aceeași regiune, fără modificarea Constituției.</p>
+        <div class="big">147,9 mil. lei<small>pe an la consiliile județene · 1,61 mld. lei împreună cu comasarea primăriilor</small></div>
+        <div class="row"><a class="btn" href="https://petreadorinsilviu.github.io/Romania-Reforma/regiuni-jm-5000.html">Vezi pe hartă</a></div>
+      </div></article>
+    </div>
+    <p class="note">Sumele „împreună” includ comasarea primăriilor în zone de minimum 5.000 de locuitori. Instituțiile prefectului și serviciile deconcentrate nu sunt incluse.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Distribuie</h2>
+    <p class="sub">Linkuri gata de pus pe Facebook sau WhatsApp: fiecare apare cu titlul, harta și cifrele vederii respective.</p>
+    <div class="share" id="share"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Date și metodă</h2>
+    <p class="sub">Execuția bugetară la 31.12.2025 a bugetului local, din rapoartele Ministerului Finanțelor (prin transparenta.eu; pentru Brăila, verificată cu rapoartele COFOG3 de la MF). Populația: INS, Recensământul 2021. Contururile: geo-spatial.org (ANCPI).</p>
+    <h3 style="margin-bottom:8px">Criteriile de comasare, în ordine</h3>
+    <ol class="crit">
+      <li>Fiecare zonă are cel puțin pragul de populație, cu cât mai multe zone posibil.</li>
+      <li>Zonele sunt continue: comunele au graniță comună.</li>
+      <li>Distanța până la reședința noii unități e cât mai mică.</li>
+      <li>Veniturile proprii acoperă cât mai mult din funcționare.</li>
+    </ol>
+    <p class="note">Metodologia completă și fișierele de date sunt în <a href="https://petreadorinsilviu.github.io/Romania-Reforma/#surse">fila Surse</a> a simulatorului și pe <a href="https://github.com/petreadorinsilviu/Romania-Reforma">GitHub</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Petrea Dorin Silviu, senator de Brăila · România 2028 · date: MF 2025, INS RPL 2021</div>
+</footer>
+
+<script>
+const SITE="https://petreadorinsilviu.github.io/Romania-Reforma/";
+const LINKS=[
+  ["Propunerea: zone de minimum 5.000 de locuitori", SITE+"tara-5000.html"],
+  ["Regionalizare: 8 regiuni de dezvoltare", SITE+"regiuni-dev-5000.html"],
+  ["Regionalizare: 21 de județe mari", SITE+"regiuni-jm-5000.html"],
+  ["Brăila: zone de minimum 5.000 de locuitori", SITE+"judet-braila-5000.html"],
+  ["Această pagină", "https://petreadorinsilviu.github.io/"]
+];
+const box=document.getElementById("share");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+box.innerHTML=LINKS.map(([t,u],i)=>`<div class="sh"><div class="t"><b>${esc(t)}</b><code>${esc(u)}</code></div><button class="btn" data-i="${i}">Copiază linkul</button></div>`).join("");
+/* Întâi clipboard; unde copierea e blocată, meniul de partajare al telefonului; altfel, linkul afișat ca să fie copiat de mână */
+box.addEventListener("click",async e=>{
+  const b=e.target.closest("button[data-i]"); if(!b) return;
+  const [t,u]=LINKS[+b.dataset.i];
+  try{ await navigator.clipboard.writeText(u); b.textContent="Copiat"; setTimeout(()=>{b.textContent="Copiază linkul";},1800); return; }catch(err){}
+  if(navigator.share){ try{ await navigator.share({title:t,url:u}); return; }catch(err){ if(err&&err.name==="AbortError") return; } }
+  try{ window.prompt("Copiază linkul:",u); }catch(err){}
+});
+</script>
+</body>
+</html>
